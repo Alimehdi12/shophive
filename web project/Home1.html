@@ -1,0 +1,584 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/jquery-1.12.4.js"></script>
+    <script src="Scripts/jquery-ui-1.12.1.js"></script>
+    <link href="Content/themes/base/jquery-ui.min.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.12.4.min.js"></script>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+  
+   
+     
+    <style>
+        .simple-bar {
+            float: left;
+        }
+
+        .head {
+            float: left;
+           text-align:right;
+            padding-top: 0px;
+        }
+
+        .simple-bar ul {
+            list-style-type: none;
+            display: block;
+        }
+
+       
+        .simple-bar1 li {
+            display: inline-block;
+        }
+         .simple-bar1 ul {
+            list-style-type: none;
+            display: block;
+        }
+
+        .simple-bar li {
+            display: inline-block;
+        }
+
+        .inner-container {
+            padding-right: 100px;
+        }
+
+        .container2 {
+          
+            margin-left: auto;
+               margin-right: auto;
+            max-height: 1800px;
+           max-width: 950px;
+           position:relative;
+
+        }
+        #product{
+            width:100%;
+        }
+        .search{
+            width:250px;
+            background-color:#e2e2fc;
+            border-radius:5px;
+            height:50px;
+            text-align:center;
+            padding-top:15px;
+        }
+        .S-bar{
+            border:1px solid green;
+            border-radius:5px;
+        }
+        .s-buton{
+            background-color:red;
+            color:white;
+            font-style:oblique;
+            border:1px solid;
+            border-radius:5px;
+        }
+        
+        .navbar li{
+          border-right:1px solid;
+        }
+        .navbar{
+            background-color:aliceblue;
+        }
+        .navbar-nav li a:hover{
+             color:red;
+        }
+      a:hover{
+            color:red;
+        }
+      .glyphicon{
+         font-size:15px;
+      }
+      .jumbotron{
+         max-width:900px;
+        text-align:center;
+        border-radius:10px;
+         margin:auto;
+        min-height:50px;
+      }
+      .simple-bar1{
+          margin-left:auto;
+          margin-right:auto;
+      }
+      #menu {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  width: 8em;
+  margin-top: -2.5em;
+  text-align:right;
+}
+         .footer-end {
+  position: fixed;
+  right: 0;
+ bottom:0;
+  top: 92%;
+ // width: 8em;
+  margin-top: -2.5em;
+}
+     .chatbtn {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            top: 100%;
+            // width: 8em;
+            margin-top: -2.5em;
+        } 
+      .b:hover{
+           width:60px;
+       }      
+    </style>
+</head>
+<body>
+    <div class="container" style="background-color:aqua; width:100%;">
+
+        <div class="inner-container pull-right">
+            <div class="head"><p style="color:red;">head</p></div>
+            
+            <div class="simple-bar" id="sh">
+      <ul>
+                    <li><a>My Acount</a></li>
+                    <li>|<a>My wristh</a></li>
+                    <li>|<a>checkout</a></li>
+                    <li>|<a>Login</a></li>
+                </ul>
+            </div>
+           
+
+        </div>
+    </div>
+ 
+
+        <div id="menu" class="pull-right">
+         
+            <div class="menupos">  <a><img src="Content/image/f1.PNG"  class="b"/></a></div> 
+            <div class="menupos"> <a><img src="Content/image/t1.PNG"  class="b"/></a></div>
+            <div class="menupos">  <a><img src="Content/image/p1.PNG"  class="b"/></a></div>
+            <div class="menupos"><a><img src="Content/image/plus.PNG" class="b" /></a></div>
+        
+        </div>
+   
+        <div class="container2">
+            <div class="footer-end pull-right">
+                <span style="font-family:Edwardian Script ITC; font-size:48px; padding-right:40px;">Let's talk....</span>
+                <span><a><img src="Content/image/bell-512.png" style="height:40px; width:40px;" /></a></span>
+                <button class="chatbtn" style="width:250px; height:40px;background-color:lightslategray;color:white;border-radius:10px; text-align:left;">online  Chatting</button>
+                <div class="loginmodel" style="display:none">
+                    <h1 class="text-center">Login</h1>
+                    <br />
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label>email</label>
+                        <input type="text" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label>phone no</label>
+                        <input type="text" class="form-control" />
+                    </div>
+                    <div class="form-group">
+
+                        <button><a href="#chatstart">submit</a> </button>
+                    </div>
+                    <div id="chatstart">
+                        <textarea rows="10" onscroll="5"></textarea>
+                        <input type="text" class="form-control" />
+                    </div>
+                </div>
+                </div>
+            
+            <div class="pull-right">
+                <strong><span class="glyphicon glyphicon-phone-alt"><strong>03424215519</strong></span></strong>
+                <span class="glyphicon glyphicon-shopping-cart"><select></select></span>
+            </div>
+
+            <div class=" Logo-line">
+                <a href="Home1.html"><img src="Content/image/Capture.PNG" /></a>
+               
+
+                <span>
+                    <span>
+                        <a>
+                            <img src="Content/image/icon.PNG" />
+                            urgent two hour delvery LHR
+                        </a>
+                    </span>
+                    <span>
+                        |<a>
+                            <img src="Content/image/icon2.PNG" />
+                            urgent two hour delvery LHR
+                        </a>
+                    </span>
+                    <span><a>|<img src="Content/image/icon1.PNG" /></a> Stock</span>
+
+                </span>
+            </div>
+            <div class="search pull-right">
+                <input type="text" class="S-bar" placeholder="enter a text" />
+                <input type="button" value="search" class="s-buton" />
+            </div>
+            <br />
+            <br />/
+            <div class="menu row">
+                <nav class="navbar navbar-inverse">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                          
+                        </div>
+                        <div class="collapse navbar-collapse" id="myNavbar"     >               
+                          
+                            <ul class="nav navbar-nav">
+             
+                                <li style="background-color:red; width:150px; height:40px; text-align:center; color:white; border-radius:10px;" id="btn2"> <a href="#">Catageries</a></li>
+                                <li><a href="Installment.html">Installment</a></li>
+                                <li><a href="used.html">used</a></li>
+                                <li><a href="Deals.html">Deal</a></li>
+                                <li><a href="#">import</a></li>
+                                <li><a href="samsung.html">Samsung</a></li>
+                                <li><a href="Sale.html">sale</a></li>
+                                <li><a href="#">shop by brand</a></li>
+                               
+                                <li><a href="Contact.html">Contact</a></li>
+
+                            </ul>
+
+
+
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <script>
+            $(function () {
+                $(document).on('click', '#btn2', function () {
+
+                    $('.catager').toggle(1000);
+                });
+            });
+            </script>
+            <div class="container3">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="catager">
+                            <ul>
+                                <li style="border-bottom:1px solid black;"><a href="#">Apple</a></li>
+
+                                <li style="border-bottom:1px solid black;"><a href="#"> hp</a></li>
+
+                                <li style="border-bottom:1px solid black;"> <a href="#">lenovo</a></li>
+                                <li style="border-bottom:1px solid black;"><a href="#">Apple</a></li>
+
+                                <li style="border-bottom:1px solid black;"><a href="#"> hp</a></li>
+
+                                <li style="border-bottom:1px solid black;"> <a href="#">lenovo</a></li>
+                                <li style="border-bottom:1px solid black;"><a href="#">Apple</a></li>
+
+                                <li style="border-bottom:1px solid black;"><a href="#"> hp</a></li>
+
+                                <li style="border-bottom:1px solid black;"> <a href="#">lenovo</a></li>
+                            </ul>
+
+                        </div>
+                        <div class="side1 well">
+                           <h3 style="color:red;">My Cart</h3>
+                            <hr />
+                           
+                            <p style="color:#d9d9d9">you have no item</p>
+                        </div>
+                        <div class="side1 well">
+                            <h3 style="color:red;">Compare</h3>
+                            <hr />
+
+                            <p style="color:#d9d9d9">you have no  Compare item</p>
+                        </div>
+                        
+                        <div class="side3">
+
+                            <img src="Content/image/sider/shirt.png" />
+                        </div>
+                        <div class="side4">
+
+                            <img src="Content/image/sider/Alienware_small.jpg" />
+                        </div>
+                       
+
+                    </div>
+                    <div class="col-md-9">
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="align">
+
+
+
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="panel panel-primary text-center">
+
+                                            <div class="panel-body">
+
+                                                <img src="Content/image/used/large_phantom4_____1__1.jpg" />
+
+                                            </div>
+                                            <div class="panel-footer">
+                                                <h1>$ 50</h1>
+                                                <button class="btn btn-info ">Add to Cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" col-md-4 col-sm-6">
+                                        <div class="panel panel-primary text-center">
+
+                                            <div class="panel-body">
+
+                                                <img src="Content/image/used/jc3_3d_multiformat_no_rating_1429866665_1.jpg" />
+                                            </div>
+                                            <div class="panel-footer">
+                                                <h1>$ 50</h1>
+                                                <button class="btn btn-info ">Add to Cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" col-md-4  col-sm-6">
+                                        <div class="panel panel-primary text-center">
+
+                                            <div class="panel-body">
+
+                                                <img src="Content/image/used/mla02_av1.jpg" />
+                                            </div>
+                                            <div class="panel-footer">
+                                                <h1>$ 50</h1>
+                                                <button class="btn btn-info ">Add to Cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="align">
+
+
+
+                                <div class="col-md-4 col-sm-6">
+                                    <div class="panel panel-primary text-center">
+
+                                        <div class="panel-body">
+
+                                            <img src="Content/image/sale/w75ap.jpg" />
+
+                                        </div>
+                                        <div class="panel-footer">
+                                            <h1>$ 50</h1>
+                                            <button class="btn btn-info ">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" col-md-4 col-sm-6">
+                                    <div class="panel panel-primary text-center">
+
+                                        <div class="panel-body">
+
+                                            <img src="Content/image/sale/w300ap.jpg" />
+                                        </div>
+                                        <div class="panel-footer">
+                                            <h1>$ 50</h1>
+                                            <button class="btn btn-info ">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" col-md-4  col-sm-6">
+                                    <div class="panel panel-primary text-center">
+
+                                        <div class="panel-body">
+
+                                            <img src="Content/image/sale/w185ap.jpg" />
+                                        </div>
+                                        <div class="panel-footer">
+                                            <h1>$ 50</h1>
+                                            <button class="btn btn-info ">Add to Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="row">
+    <div class="align">
+
+
+
+        <div class="col-md-4 col-sm-6">
+            <div class="panel panel-primary text-center">
+
+                <div class="panel-body">
+
+                    <img src="Content/image/sale/g2124t_1.jpg" />
+
+                </div>
+                <div class="panel-footer">
+                    <h1>$ 50</h1>
+                    <button class="btn btn-info ">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class=" col-md-4 col-sm-6">
+            <div class="panel panel-primary text-center">
+
+                <div class="panel-body">
+
+                    <img src="Content/image/sale/f1226p.jpg" />
+                </div>
+                <div class="panel-footer">
+                    <h1>$ 50</h1>
+                    <button class="btn btn-info ">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class=" col-md-4  col-sm-6">
+            <div class="panel panel-primary text-center">
+
+                <div class="panel-body">
+
+                    <img src="Content/image/sale/f1024.jpg" />
+                </div>
+                <div class="panel-footer">
+                    <h1>$ 50</h1>
+                    <button class="btn btn-info ">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="jumbotron" id="jumb">
+                <span>
+                    <span class="col-sx-6"><strong>Nweslater</strong> <input type="text" placeholder="enter a  newslatter" style="max-width:1000px;  border-radius:10px;   " /><input type="button" value="sucribe" style="color:white;background-color:red;" /></span>
+                    <span class="col-sx-6">
+                        <span style=" color:red;">Follow</span>
+
+                        <img src="Content/image/facebook.PNG" />
+
+                        <img src="Content/image/twiter.PNG" />
+
+                        <img src="Content/image/wififi.PNG" />
+                    </span>
+                </span>
+            </div>
+            <div class="footer well">
+                <div class="row">
+                    <div class="col-md-3">
+                        <ul>
+                            Top Brand
+                            <li><a href="#">Apple</a></li>
+                            <li><a href="#">hp</a></li>
+                            <li><a href="#">Dell</a></li>
+                            <li><a href="#">Lenovo</a></li>
+                            <li><a href="#">Microsoft</a></li>
+                            <li><a href="#">Asus</a></li>
+                            <li><a href="#">Alienware</a></li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="col-md-3">
+                        <ul>
+                            Top Brand
+                            <li><a href="#">Apple</a></li>
+                            <li><a href="#">hp</a></li>
+                            <li><a href="#">Dell</a></li>
+                            <li><a href="#">Lenovo</a></li>
+                            <li><a href="#">Microsoft</a></li>
+                            <li><a href="#">Asus</a></li>
+                            <li><a href="#">Alienware</a></li>
+
+                        </ul>
+
+                    </div>
+                    <div class="col-md-3">
+                        <ul>
+                            Top Brand
+                            <li><a href="#">Apple</a></li>
+                            <li><a href="#">hp</a></li>
+                            <li><a href="#">Dell</a></li>
+                            <li><a href="#">Lenovo</a></li>
+                            <li><a href="#">Microsoft</a></li>
+                            <li><a href="#">Asus</a></li>
+                            <li><a href="#">Alienware</a></li>
+
+                        </ul>
+
+                    </div>
+                    <div class="col-md-3">
+                        <ul>
+                            Top Brand
+                            <li><a href="#">Apple</a></li>
+                            <li><a href="#">hp</a></li>
+                            <li><a href="#">Dell</a></li>
+                            <li><a href="#">Lenovo</a></li>
+                            <li><a href="#">Microsoft</a></li>
+                            <li><a href="#">Asus</a></li>
+                            <li><a href="#">Alienware</a></li>
+
+                        </ul>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+            <div class="simple-bar1">
+                <ul>
+                    <li><a>My Acount</a></li>
+                    <li>|<a>My wristh</a></li>
+                    <li>|<a>checkout</a></li>
+                    <li>|<a>Login</a></li>
+                    <li><a>My Acount</a></li>
+                    <li>|<a>My wristh</a></li>
+                    <li>|<a>checkout</a></li>
+                    <li>|<a>Login</a></li>
+                </ul>
+            </div>
+
+            <div class="copy" style="text-align:center;">
+                <p>2005-2016 shophive all right is reserved</p>
+
+            </div>
+            <div class="social-contact" style="text-align:center;">
+                <span><a>
+<img src="Content/image/gogle.PNG" /></a></span>
+                <span><a>
+<img src="Content/image/easy.PNG" /></a></span>
+                <span><a>
+<img src="Content/image/kenue.PNG" /></a></span>
+                <span><a>
+                          <img src="Content/image/car.PNG" /></a></span>
+                <span><a>
+<img src="Content/image/apple.PNG" /></a></span>
+                <span><a>
+<img src="Content/image/visa.PNG" /></a></span>
+            </div>
+
+        </div>
+
+
+
+
+</body>
+</html>

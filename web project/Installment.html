@@ -1,0 +1,636 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <script src="Scripts/bootstrap.min.js"></script>
+    <link href="Content/themes/base/jquery-ui.min.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.12.4.js"></script>
+    <script src="Scripts/jquery-ui-1.12.1.js"></script>
+    <script src="Scripts/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function () {
+            $(".chatbtn").click(function () {
+                $(".loginmodel").dialog({
+                    height: 400,
+                    width: 300,
+
+                   position: { my: "left top", at: "left top", position:"fixed",of: ".chatbtn" },
+                   
+                   
+                    show: { effect: "bounce", duration: 800 },
+                    hide: { effect: "clip", duration: 800 }
+
+                });
+            });
+
+        });
+    </script>
+    <style>
+        .simple-bar {
+            float: left;
+        }
+
+        .head {
+            float: left;
+                text-align:right;
+            padding-top: 0px;
+        }
+
+        .simple-bar ul {
+            list-style-type: none;
+            display: block;
+        }
+
+
+        .simple-bar1 li {
+            display: inline-block;
+        }
+
+        .simple-bar1 ul {
+            list-style-type: none;
+            display: block;
+        }
+
+        .simple-bar li {
+            display: inline-block;
+        }
+
+        .inner-container {
+            padding-right: 100px;
+        }
+
+        .container2 {
+         
+            margin-left: auto;
+            margin-right: auto;
+            max-height: 1800px;
+            max-width: 950px;
+            position: relative;
+        }
+
+        #product {
+            width: 100%;
+        }
+
+        .search {
+            width: 250px;
+            background-color: #e2e2fc;
+            border-radius: 5px;
+            height: 50px;
+            text-align: center;
+            padding-top: 15px;
+        }
+
+        .S-bar {
+            border: 1px solid green;
+            border-radius: 5px;
+        }
+
+        .s-buton {
+            background-color: red;
+            color: white;
+            font-style: oblique;
+            border: 1px solid;
+            border-radius: 5px;
+        }
+
+        .navbar li {
+            border-right: 1px solid;
+        }
+
+        .navbar {
+            background-color: aliceblue;
+        }
+
+        .navbar-nav li a:hover {
+            color: red;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        .glyphicon {
+            font-size: 15px;
+        }
+
+        .jumbotron {
+            max-width: 900px;
+            text-align: center;
+            border-radius: 10px;
+            margin: auto;
+            min-height: 50px;
+        }
+
+        .simple-bar1 {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #menu {
+            position: fixed;
+            right: 0;
+            top: 50%;
+            width: 8em;
+            margin-top: -2.5em;
+            text-align: right;
+        }
+
+        .footer-end {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            top: 90%;
+            // width: 8em;
+            margin-top: -2.5em;
+        }
+        .chatbtn{
+         
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            top: 100%;
+            // width: 8em;
+            margin-top: -2.5em;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container" style="background-color:aqua; width:100%;">
+
+        <div class="inner-container pull-right">
+            <div class="head"><p style="color:red;">head</p></div>
+
+            <div class="simple-bar" id="sh">
+                <ul>
+                    <li><a>My Acount</a></li>
+                    <li>|<a>My wristh</a></li>
+                    <li>|<a>checkout</a></li>
+                    <li>|<a>Login</a></li>
+                </ul>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <div id="menu" class="pull-right">
+
+        <div class="menupos">  <a><img src="Content/image/f1.PNG" class="b" /></a></div>
+        <div class="menupos"> <a><img src="Content/image/t1.PNG" class="b" /></a></div>
+        <div class="menupos">  <a><img src="Content/image/p1.PNG"class="b" /></a></div>
+        <div class="menupos"><a><img src="Content/image/plus.PNG" class="b"/></a></div>
+
+    </div>
+
+    <div class="container2">
+        <div class="footer-end pull-right">
+            <span style="font-family:Edwardian Script ITC; font-size:48px; padding-right:40px;">Let's talk....</span>
+            <span><a><img src="Content/image/bell-512.png" style="height:40px; width:40px;" /></a></span>
+        
+               <button  class="chatbtn"style="width:250px; height:40px;background-color:lightslategray;color:white;border-radius:10px; text-align:left;">online  Chatting</button>
+            <div class="loginmodel" style="display:none">
+                <h1 class="text-center">Login</h1>
+                <br />
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>email</label>
+                    <input type="text" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>phone no</label>
+                    <input type="text" class="form-control" />
+                </div>
+                <div class="form-group">
+                   
+                <button><a href="#chatstart">submit</a> </button>
+                </div>
+                <div id="chatstart">
+                   <textarea rows="10" onscroll="5"></textarea>
+                    <input type="text" class="form-control" />
+                </div>
+            </div>
+        </div>
+        
+            <div class="pull-right">
+                <strong><span class="glyphicon glyphicon-phone-alt"><strong>03424215519</strong></span></strong>
+                <span class="glyphicon glyphicon-shopping-cart"><select></select></span>
+            </div>
+
+            <div class=" Logo-line">
+               
+
+                <span>
+                    <span>
+                        <a>
+                            <img src="Content/image/icon.PNG" />
+                            urgent two hour delvery LHR
+                        </a>
+                    </span>
+                    <span>
+                        |<a>
+                            <img src="Content/image/icon2.PNG" />
+                            urgent two hour delvery LHR
+                        </a>
+                    </span>
+                    <span><a>|<img src="Content/image/icon1.PNG" /></a> Stock</span>
+
+                </span>
+            </div>
+            <div class="search pull-right">
+                <input type="text" class="S-bar" placeholder="enter a text" />
+                <input type="button" value="search" class="s-buton" />
+            </div>
+            <br />
+            <br />/
+            <div class="menu row">
+                <nav class="navbar navbar-inverse">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                          
+                        </div>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+
+
+
+                            <ul class="nav navbar-nav">
+
+                                <li style="background-color:red; width:150px; height:40px; text-align:center; margin-top:5px; margin-left:10px;  color:white; border-radius:10px;" id="btn2"><a href="#">Catageries</a> </li>
+                                <li><a href="installment">Installment</a></li>
+                                <li><a href="used.html">used</a></li>
+                                <li><a href="Deals.html">Deal</a></li>
+                                <li><a href="#">import</a></li>
+                                <li><a href="samsung.html">Samsung</a></li>
+                                <li><a href="Sale.html">sale</a></li>
+                                <li><a href="#">shop by brand</a></li>
+                               
+                                <li><a href="Contact.html">Contact</a></li>
+
+                            </ul>
+
+
+
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        <script>
+            $(function () {
+                $(document).on('click', '#btn2', function () {
+
+                    $('.catager').toggle(1000);
+                });
+            });
+        </script>
+            <div class="container3">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="catager">
+                            <ul>
+                                <li style="border-bottom:1px solid black;"><a href="#">Apple</a></li>
+
+                                <li style="border-bottom:1px solid black;"><a href="#"> hp</a></li>
+
+                                <li style="border-bottom:1px solid black;"> <a href="#">lenovo</a></li>
+                                <li style="border-bottom:1px solid black;"><a href="#">Apple</a></li>
+
+                                <li style="border-bottom:1px solid black;"><a href="#"> hp</a></li>
+
+                                <li style="border-bottom:1px solid black;"> <a href="#">lenovo</a></li>
+                                <li style="border-bottom:1px solid black;"><a href="#">Apple</a></li>
+
+                                <li style="border-bottom:1px solid black;"><a href="#"> hp</a></li>
+
+                                <li style="border-bottom:1px solid black;"> <a href="#">lenovo</a></li>
+                            </ul>
+
+                        </div>
+                        <div class="side1 well">
+                            <h3 style="color:red;">My Cart</h3>
+                            <hr />
+
+                            <p style="color:#d9d9d9">you have no item</p>
+                        </div>
+                        <div class="side3 well">
+                            <h3 style="color:red;">Compare</h3>
+                            <hr />
+
+                            <p style="color:#d9d9d9">you have no  Compare item</p>
+                        </div>
+                        <div class="side2">
+
+                            <img src="Content/image/sider/shirt.png" /> 
+                        </div>
+                        <div class="side2">
+
+                            <img src="Content/image/sider/Alienware_small.jpg" />
+                        </div>
+                       
+
+                    </div>
+                    <div class="col-md-9">
+                        <h1>Leasing Rules &Regulation</h1>
+                        <div class="instament-way">
+                            <div>
+                                <label>total amount</label>
+                                <input style="margin-left:150px;" id="amount" />
+                            </div>
+                            <div>
+                                <label>Downpayment(optional)</label>
+                                <input style="margin-left:80px;" />
+                            </div>
+                            <div>
+                                <script>
+                                    function installment() {
+                                        var amountt = document.getElementById("amount").value;
+                                        if (amountt < 10000) {
+                                            alert("value mustbe grater then 10000")
+                                        }
+                                        else {
+                                            var rates
+                                            $('.form input').on('change', function () {
+                                                var rates = $('input[name=optradio]:checked', '.form').val();
+                                              
+                                                if (rates == 6) {
+                                                    var res = ((amountt) * (1.24)) / rates;
+                                                    alert(res);
+                                                }
+                                                else if(rates==12) {
+                                                    var res = ((amountt) * (1.24)) / rates;
+                                                    alert(res);
+                                                }
+                                                else {
+                                                    var res = ((amountt) * (1.24)) / rates;
+                                                    alert(res);
+                                                }
+                                            });
+                                          
+                                        }
+                                    }
+                                   
+                                       
+                                 
+                                </script>
+                                <span class="form">
+                                   
+                                
+                                   <input type="radio" name="optradio" value="6" />6 month installment<br />
+                                   <input type="radio" name="optradio" value="12"> 12 month installmentt<br />
+                                   <input type="radio" name="optradio" value="18">18 month installmentt<br />
+                                </span>
+                               
+                            </div>
+                            <button type="submit" onclick="installment()">submit</button>
+                        </div>
+                        <div class="outer-block" style="border:1px solid black;width:590px;height:600px;overflow:scroll;  background-color:skyblue;">
+
+                            <div class="form-horizontal" style="width:590px; border:1px solid black; background-color:white; text-align:center; ">
+                                <h1>Shophive Lease Application Form</h1>
+                                <div class="form-group">
+                                    <label>ID CARD NUMBER</label>
+                                    <input type="text" required />
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">FULL Name ON AS ID CARD </label>
+                                    <input type="text" required />
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label"> Date OF birth</label>
+                                    <input type="date" required />
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">Father Name</label>
+                                    <input type="text" required />
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">Sex</label>
+                                    <select>
+                                        <option> male</option>
+                                        <option>femaile</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">Age</label>
+                                    <input type="text" required />
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">wife of</label>
+                                    <input type="text" required />
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">Current REsident Address</label>
+                                    <textarea rows="5"> </textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label>Residence</label>
+                                    <select>
+                                        <option> Owned</option>
+                                        <option>ranted</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">city</label>
+                                    <select>
+                                        <option> lahore</option>
+                                        <option>faslabad</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Current REsident Address</label>
+                                    <textarea rows="5"> </textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label>city</label>
+                                    <select>
+                                        <option> lahore</option>
+                                        <option>faslabad</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Property</label>
+                                    <select>
+                                        <option>ownes</option>
+                                        <option>rented</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Occupation</label>
+                                    <select>
+                                        <option> job</option>
+                                        <option>self employed</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Company</label>
+                                    <input type="text" required />
+                                </div>
+                                <div class="form-group">
+                                    <label>Job discription /title</label>
+                                    <input type="text" required />
+                                </div>
+                                <div class="form-group">
+                                    <label> Working since</label>
+                                    <input type="text" required />
+                                </div>
+                                <div class="form-group">
+                                    <label>earning per montth</label>
+                                    <input type="text" required />
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+                <div class="jumbotron" id="jumb">
+                    <span>
+                        <span class="col-sx-6"><strong>Nweslater</strong> <input type="text" placeholder="enter a  newslatter" style="max-width:1000px;  border-radius:10px;   " /><input type="button" value="sucribe" style="color:white;background-color:red;" /></span>
+                        <span class="col-sx-6">
+                            <span style=" color:red;">Follow</span>
+
+                            <img src="Content/image/facebook.PNG" />
+
+                            <img src="Content/image/twiter.PNG" />
+
+                            <img src="Content/image/wififi.PNG" />
+                        </span>
+                    </span>
+                </div>
+                <div class="footer well">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <ul>
+                                Top Brand
+                                <li><a href="#">Apple</a></li>
+                                <li><a href="#">hp</a></li>
+                                <li><a href="#">Dell</a></li>
+                                <li><a href="#">Lenovo</a></li>
+                                <li><a href="#">Microsoft</a></li>
+                                <li><a href="#">Asus</a></li>
+                                <li><a href="#">Alienware</a></li>
+
+                            </ul>
+
+                        </div>
+
+                        <div class="col-md-3">
+                            <ul>
+                                Top Brand
+                                <li><a href="#">Apple</a></li>
+                                <li><a href="#">hp</a></li>
+                                <li><a href="#">Dell</a></li>
+                                <li><a href="#">Lenovo</a></li>
+                                <li><a href="#">Microsoft</a></li>
+                                <li><a href="#">Asus</a></li>
+                                <li><a href="#">Alienware</a></li>
+
+                            </ul>
+
+                        </div>
+                        <div class="col-md-3">
+                            <ul>
+                                Top Brand
+                                <li><a href="#">Apple</a></li>
+                                <li><a href="#">hp</a></li>
+                                <li><a href="#">Dell</a></li>
+                                <li><a href="#">Lenovo</a></li>
+                                <li><a href="#">Microsoft</a></li>
+                                <li><a href="#">Asus</a></li>
+                                <li><a href="#">Alienware</a></li>
+
+                            </ul>
+
+                        </div>
+                        <div class="col-md-3">
+                            <ul>
+                                Top Brand
+                                <li><a href="#">Apple</a></li>
+                                <li><a href="#">hp</a></li>
+                                <li><a href="#">Dell</a></li>
+                                <li><a href="#">Lenovo</a></li>
+                                <li><a href="#">Microsoft</a></li>
+                                <li><a href="#">Asus</a></li>
+                                <li><a href="#">Alienware</a></li>
+
+                            </ul>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+                <div class="simple-bar1">
+                    <ul>
+                        <li><a>My Acount</a></li>
+                        <li>|<a>My wristh</a></li>
+                        <li>|<a>checkout</a></li>
+                        <li>|<a>Login</a></li>
+                        <li><a>My Acount</a></li>
+                        <li>|<a>My wristh</a></li>
+                        <li>|<a>checkout</a></li>
+                        <li>|<a>Login</a></li>
+                    </ul>
+                </div>
+
+                <div class="copy" style="text-align:center;">
+                    <p>2005-2016 shophive all right is reserved</p>
+
+                </div>
+                <div class="social-contact" style="text-align:center;">
+                    <span>
+                        <a>
+                            <img src="Content/image/gogle.PNG" />
+                        </a>
+                    </span>
+                    <span>
+                        <a>
+                            <img src="Content/image/easy.PNG" />
+                        </a>
+                    </span>
+                    <span>
+                        <a>
+                            <img src="Content/image/kenue.PNG" />
+                        </a>
+                    </span>
+                    <span>
+                        <a>
+                            <img src="Content/image/car.PNG" />
+                        </a>
+                    </span>
+                    <span>
+                        <a>
+                            <img src="Content/image/apple.PNG" />
+                        </a>
+                    </span>
+                    <span>
+                        <a>
+                            <img src="Content/image/visa.PNG" />
+                        </a>
+                    </span>
+                </div>
+
+            </div>
+
+
+
+
+</body>
+</html>

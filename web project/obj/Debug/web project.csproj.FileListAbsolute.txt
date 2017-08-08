@@ -1,0 +1,20 @@
+C:\Users\Trodosoft\Documents\web projects\web project\web project\bin\roslyn\csc.exe
+C:\Users\Trodosoft\Documents\web projects\web project\web project\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Trodosoft\Documents\web projects\web project\web project\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Trodosoft\Documents\web projects\web project\web project\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Trodosoft\Documents\web projects\web project\web project\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Trodosoft\Documents\web projects\web project\web project\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Trodosoft\Documents\web projects\web project\web project\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Trodosoft\Documents\web projects\web project\web project\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Trodosoft\Documents\web projects\web project\web project\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Trodosoft\Documents\web projects\web project\web project\bin\roslyn\vbc.exe
+C:\Users\Trodosoft\Documents\web projects\web project\web project\bin\roslyn\VBCSCompiler.exe
+C:\Users\Trodosoft\Documents\web projects\web project\web project\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Trodosoft\Documents\web projects\web project\web project\bin\web project.dll.config
+C:\Users\Trodosoft\Documents\web projects\web project\web project\bin\web project.dll
+C:\Users\Trodosoft\Documents\web projects\web project\web project\bin\web project.pdb
+C:\Users\Trodosoft\Documents\web projects\web project\web project\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Trodosoft\Documents\web projects\web project\web project\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Trodosoft\Documents\web projects\web project\web project\obj\Debug\web project.csprojResolveAssemblyReference.cache
+C:\Users\Trodosoft\Documents\web projects\web project\web project\obj\Debug\web project.dll
+C:\Users\Trodosoft\Documents\web projects\web project\web project\obj\Debug\web project.pdb
